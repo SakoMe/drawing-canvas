@@ -1,0 +1,120 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+  font-family: 'Questrial', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
+
+main,
+li {
+  display: block; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit; }
+
+strong {
+  font-weight: bold; }
+
+a,
+button {
+  color: inherit;
+  transition: .3s; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px auto; }
+  section #canvas {
+    display: block;
+    border: 1px solid black;
+    margin: 10px auto 0px; }
+  section #drawingTools {
+    width: 800px;
+    height: 135px;
+    margin: 0 auto; }
+    section #drawingTools #colors {
+      width: 100%;
+      height: 20px; }
+      section #drawingTools #colors button {
+        width: 20%;
+        height: 20px;
+        float: left;
+        border: 1px solid #7b1a86; }
+        section #drawingTools #colors button:hover {
+          opacity: 0.5; }
+      section #drawingTools #colors #black {
+        background: black; }
+      section #drawingTools #colors #white {
+        background: white; }
+      section #drawingTools #colors #red {
+        background: red; }
+      section #drawingTools #colors #green {
+        background: green; }
+      section #drawingTools #colors #blue {
+        background: blue; }
+    section #drawingTools #otherTools {
+      width: 100%;
+      height: 115px; }
+      section #drawingTools #otherTools button {
+        width: 20%;
+        height: 50px;
+        margin-top: 5px;
+        border: 1px solid white;
+        background: #303030;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        cursor: pointer;
+        float: left;
+        border: 1px solid #7b1a86; }
+        section #drawingTools #otherTools button:hover {
+          opacity: 0.6; }
+  section #file {
+    visibility: hidden; }
