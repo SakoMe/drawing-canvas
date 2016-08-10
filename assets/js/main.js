@@ -53,14 +53,14 @@ function triggerClick() {
     document.getElementById('file').click();
 }
 
-document.getElementById('file').addEventListener('change', function(e){
+document.getElementById('file').addEventListener('change', function(e) {
     clearCanvas();
-    URL = URL || webkitURL;
+    var URL = URL || webkitURL;
     var temp = URL.createObjectURL(e.target.files[0]);
     var image = new Image();
     image.src = temp;
 
-    image.addEventListener('load', function(){
+    image.addEventListener('load', function() {
         imageWidth = image.naturalWidth;
         imageHeight = image.naturalHeight;
         newImageWidth = imageWidth;
@@ -72,7 +72,7 @@ document.getElementById('file').addEventListener('change', function(e){
             newImageHeight = 800 / originalImageRatio;
         }
 
-        if ((newImageWidth >= newImageHeight || newImageWidth > newImageWidth)  && newImageHeight > 500) {
+        if ((newImageWidth >= newImageHeight || newImageWidth > newImageWidth) && newImageHeight > 500) {
             newImageHeight = 500;
             newImageWidth = 500 * originalImageRatio;
         }
