@@ -1,15 +1,18 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Drawing Canvas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <section>
+        <header>Drawing Canvas Pure JS</header>
         <div id="drawingTools">
             <div id="colors">
                 <button id="black" onclick="changeColor('black')"></button>
@@ -23,7 +26,8 @@
                 <button id="brushSize1" onclick="changeBrushSize(5)">brush size 1</button>
                 <button id="brushSize2" onclick="changeBrushSize(20)">brush size 2</button>
                 <button id="brushSize3" onclick="changeBrushSize(30)">brush size 3</button>
-                <button id="brushSize4" onclick="changeBrushSize(40)">brush size 4</button><br>
+                <button id="brushSize4" onclick="changeBrushSize(40)">brush size 4</button>
+                <br>
                 <button id="fillCanvas" onclick="fillCanvas()">Fill canvas</button>
                 <button id="defaultBrush" onclick="changeBrushStyle('butt')">default brush</button>
                 <button id="squareBrush" onclick="changeBrushStyle('square')">square brush</button>
@@ -31,10 +35,11 @@
                 <button id="openFile" onclick="triggerClick()">open img</button>
             </div>
         </div>
-        <canvas id="canvas" width = "800px" height="500px;"></canvas>
+        <canvas id="canvas" width="800px" height="500px;"></canvas>
         <input type="file" id="file" accept="image/*" />
     </section>
 
     <script src="assets/js/min/main-min.js"></script>
-  </body>
+</body>
+
 </html>
